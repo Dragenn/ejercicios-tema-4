@@ -1,0 +1,118 @@
+public class sentenciaIF{   // SENTECIA IF-ELSE
+    
+    public static void main(String[] args)  {
+
+        int numeroif = 3; //  cambiar  valor para probar diferentes opciones
+
+        if (numeroif > 0) {
+         System.out.println("El número es positivo");
+        } else if (numeroif < 0) {
+        System.out.println("El número es negativo");
+        } else {
+        System.out.println("El número es 0");
+        }
+
+    }
+}
+
+Bucle while
+
+
+public class sentenciaWhile {     // sentencia while
+    
+    public static void main(String[] args)  {
+
+        int numeroWhile = 0;
+
+      while(numeroWhile < 3) {
+       System.out.println("El número es " + numeroWhile);
+       numeroWhile++; // incrementa el valor de numeroWhile en 1
+      }
+
+        
+    }
+}
+
+
+Bucle Do-While
+
+public class sentenciaDoWhile {
+    
+    public static void main(String[] args) {
+        
+        int numeroWhile = 0;
+        do {
+        System.out.println("El valor de numeroWhile es: " + numeroWhile);
+        numeroWhile++;
+      } while (numeroWhile < 3);
+
+    }
+}
+
+
+Bucle For
+
+
+public class sentenciaFor {
+    
+    public static void main(String[] args)  {
+        
+        for (int numeroFor = 0; numeroFor <= 3; numeroFor++) {
+            System.out.println("El valor de numeroFor es: " + numeroFor);
+          }
+          
+    }
+}
+
+
+Bucle Switch
+
+
+import java.util.Scanner;
+
+public class SentenciaSwitch {
+    public static void main(String[] args) {
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Ingrese un número para seleccionar una estación:");
+
+            int seleccion = sc.nextInt();
+            String estacion;
+
+            switch (seleccion) {
+                case 1:
+                    estacion = "primavera";
+                    break;
+                case 2:
+                    estacion = "verano";
+                    break;
+                case 3:
+                    estacion = "otoño";
+                    break;
+                case 4:
+                    estacion = "invierno";
+                    break;
+                default:
+                    estacion = "no válida";
+                    break;
+            }
+
+            if (estacion.equals("no válida")) {
+                System.out.println("El número ingresado no es válido.");
+            } else {
+                System.out.println("La estación seleccionada es: " + estacion);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
